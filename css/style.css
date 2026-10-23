@@ -484,7 +484,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
 
 .switch {
   position: fixed;
-  right: 16px;
+  left: 16px;
   bottom: 16px;
   z-index: 40;
   padding: 10px 14px;

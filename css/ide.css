@@ -704,7 +704,7 @@ svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width:
 
 .switch {
   position: fixed;
-  right: 16px;
+  left: 16px;
   bottom: calc(var(--status-h) + 16px);
   z-index: 40;
   padding: 10px 14px;
