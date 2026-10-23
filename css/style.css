@@ -45,7 +45,8 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
   position: fixed;
   inset: 0 auto 0 0;
   width: var(--sidebar-w);
-  border-right: 1px solid var(--rule);
+  background: var(--accent);
+  --nav-dim: #e5eceb;
   padding: 32px 24px 32px 40px;
   display: flex;
   flex-direction: column;
@@ -61,7 +62,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: var(--muted);
+  color: var(--nav-dim);
   transition: color 0.15s;
 }
 
@@ -81,12 +82,11 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
   transition: width 0.2s ease, background-color 0.2s;
 }
 
-.nav a:hover { color: var(--ink); }
+.nav a:hover { color: var(--bg); }
 .nav a:hover .nav-line { width: 32px; }
 
-.nav a.is-active { color: var(--ink); }
-.nav a.is-active .nav-line { width: 48px; background: var(--accent); }
-.nav a.is-active .nav-num { color: var(--accent); }
+.nav a.is-active { color: var(--bg); font-weight: 600; }
+.nav a.is-active .nav-line { width: 48px; height: 2px; }
 
 /* Sous-sections, alignées sous le libellé du parent */
 .nav-sub {
@@ -432,9 +432,6 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
     width: 100%;
     height: auto;
     padding: 0 16px;
-    border-right: 0;
-    border-bottom: 1px solid var(--rule);
-    background: var(--bg);
     z-index: 10;
   }
 
@@ -460,7 +457,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
     right: 0;
     bottom: -16px;
     height: 2px;
-    background: var(--accent);
+    background: var(--bg);
   }
 
   .content { margin-left: 0; padding: 0 16px 64px; }
