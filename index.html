@@ -41,7 +41,7 @@
       "alternateName": "Clement Lacoste",
       "givenName": "Clément",
       "familyName": "Lacoste",
-      "description": "Clément Lacoste est étudiant en Bachelor Informatique à Ynov Rennes Campus, en deuxième année du parcours Cybersécurité / Réseaux. Il réalise des projets en sécurité réseau (pfSense, VLAN, VPN OpenVPN, PKI), en cybersécurité (Hack The Box Academy, API de gestion d'incidents) et en développement, et prépare la certification Cisco CCNA.",
+      "description": "Clément Lacoste est étudiant en Bachelor Informatique à Ynov Rennes Campus, en deuxième année du parcours Cybersécurité / Réseaux. Il réalise des projets en sécurité réseau (pfSense, VLAN, VPN OpenVPN, PKI), en cybersécurité (audit de sécurité d'une imprimante réseau, Hack The Box Academy, API de gestion d'incidents) et en développement, et prépare la certification Cisco CCNA.",
       "jobTitle": "Étudiant en cybersécurité et réseaux",
       "email": "mailto:clement.lacoste64@gmail.com",
       "address": {
@@ -68,7 +68,9 @@
         "Linux",
         "Active Directory",
         "Python",
-        "FastAPI"
+        "FastAPI",
+        "Ansible",
+        "Audit de sécurité"
       ],
       "sameAs": [
         "https://www.linkedin.com/in/cl%C3%A9ment-lacoste-55989126b/",
@@ -141,6 +143,28 @@
           </div>
           <div class="project-body">
             <div class="project-head">
+              <h4 class="project-name">Audit de sécurité d'une imprimante réseau</h4>
+              <a class="project-link" href="https://github.com/ClementLacoste7/Audit_Printer" target="_blank" rel="noopener">Voir le projet ↗</a>
+            </div>
+            <p class="project-desc">Audit d'une imprimante HP ENVY 5000 connectée en Wi-Fi sur un réseau domestique. Cartographie de la surface d'attaque, scan réel, application des correctifs, puis scan de contrôle pour valider les corrections.</p>
+            <dl class="project-details">
+              <dt>Contexte</dt><dd>Équipement réel, sur un réseau domestique en Wi-Fi.</dd>
+              <dt>Démarche</dt><dd>Analyse des ports, des services exposés et de la configuration par défaut. Scan automatisé en lecture seule avec un playbook Ansible. Cycle complet : constat, correction, vérification.</dd>
+              <dt>Correctifs</dt><dd>Mot de passe administrateur, désactivation de l'impression cloud HP ePrint, redirection HTTPS forcée avec HSTS.</dd>
+              <dt>Stack</dt><dd class="mono">Ansible / WSL / Linux</dd>
+              <dt>Appris</dt><dd>Un audit ne s'arrête pas au scan. SNMP n'est pas désactivable sur ce modèle grand public : la réponse passe par l'isolation réseau. L'authentification par formulaire échappe au scan réseau et se vérifie à la main.</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-meta">
+            <span class="project-ref">CYB-02</span>
+            <span>2026</span>
+            <span>Terminé</span>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
               <h4 class="project-name">Mini SOC</h4>
               <a class="project-link" href="#" target="_blank" rel="noopener">Voir le projet ↗</a>
             </div>
@@ -155,7 +179,7 @@
 
         <article class="project">
           <div class="project-meta">
-            <span class="project-ref">CYB-02</span>
+            <span class="project-ref">CYB-03</span>
             <span>2026</span>
             <span>En cours</span>
           </div>
@@ -242,6 +266,7 @@
           <li><span class="logo" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/hackthebox.svg)"></span>Hack The Box</li>
           <li><span class="logo" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/python.svg)"></span>Python</li>
           <li><span class="logo" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/fastapi.svg)"></span>FastAPI</li>
+          <li><span class="logo" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/ansible.svg)"></span>Ansible</li>
           <li><span class="logo" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/git.svg)"></span>Git</li>
           <li><span class="logo" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/github.svg)"></span>GitHub</li>
         </ul>
