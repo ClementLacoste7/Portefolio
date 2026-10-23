@@ -1,11 +1,9 @@
 :root {
-  color-scheme: dark;
-  --bg: #1c1c1b;
-  --sidebar: #232323;
-  --ink: #e8e6e1;
-  --accent: #6fbf8e;
-  --muted: #8c8a85;
-  --rule: #343434;
+  --bg: #f2f1ec;
+  --ink: #121412;
+  --accent: #157a34;
+  --muted: rgba(18, 20, 18, 0.58);
+  --rule: rgba(18, 20, 18, 0.9);
 
   --mono: "IBM Plex Mono", ui-monospace, monospace;
   --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
@@ -47,7 +45,6 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
   inset: 0 auto 0 0;
   width: var(--sidebar-w);
   border-right: 1px solid var(--rule);
-  background: var(--sidebar);
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
@@ -117,7 +114,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--ink);
 }
 
 
@@ -309,7 +306,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
   padding: 16px 20px;
   margin: 0 0 32px 192px;
   max-width: 680px;
-  background: rgba(111, 191, 142, 0.08);
+  background: rgba(21, 122, 52, 0.06);
 }
 
 .note-label {
@@ -421,7 +418,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
     padding: 0 16px;
     border-right: 0;
     border-bottom: 1px solid var(--rule);
-    background: var(--sidebar);
+    background: var(--bg);
     z-index: 10;
   }
 
@@ -479,20 +476,3 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
   .content { max-width: calc(var(--sidebar-w) + 1280px); }
   .hero { grid-template-columns: minmax(0, 1fr) 320px; }
 }
-
-/* Bouton de comparaison des versions */
-
-.switch {
-  position: fixed;
-  left: 16px;
-  bottom: 16px;
-  z-index: 40;
-  padding: 10px 14px;
-  background: var(--ink);
-  color: var(--bg);
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  text-decoration: none;
-}
-
-.switch:hover { background: var(--accent); }

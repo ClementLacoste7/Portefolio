@@ -26,12 +26,3 @@ function setActive() {
 
 window.addEventListener('scroll', setActive, { passive: true });
 setActive();
-
-// Garde la section en cours quand on change de version
-const switchLink = document.querySelector('.switch');
-if (switchLink) {
-  switchLink.addEventListener('click', () => {
-    const active = document.querySelector('[data-nav].is-active');
-    switchLink.href = switchLink.getAttribute('href').split('#')[0] + (active ? active.getAttribute('href') : '');
-  });
-}
